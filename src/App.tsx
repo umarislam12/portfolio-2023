@@ -10,24 +10,30 @@ import Contact from './components/contact'
 
 
 function App() {
-  const [count, setCount] = useState(0)
-
+  
+const [opacityy,setOpacityy]=useState(1)
+function handleOpacity(opacity:any){
+setOpacityy(opacity)
+}
   return (
 
-    <div className="App w-screen  flex flex-col" >
-      <Navbar />
-      <About/>
-      <Skills/>
-      <br/>
-      <br/>
-     <Services/>
-     
-      <Portfolio/>
-      <br/>
-     <br/>
-     <br/>
-      <Contact />
-     <Footer/>
+    <div className="App h-screen relative w-auto align-middle flex flex-col font-sans overflow-x-hidden" >
+      <Navbar handleOpacity={handleOpacity}/>
+      <div style={{opacity:opacityy}} className='w-screen  h-screen '>
+
+            <About/>
+            <Skills/>
+            <br/>
+            <br/>
+          <Services/>
+          
+            <Portfolio/>
+            <br/>
+          <br/>
+          <br/>
+            <Contact />
+          <Footer/>
+      </div>
     </div>
   )
 }

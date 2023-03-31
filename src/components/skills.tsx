@@ -9,7 +9,7 @@ function print(){
     console.log(output)
 }
 
-    return (<div className='ml-28 mt-8 justify-center flex flex-col'>
+    return (<div className='ml-28 mt-8 justify-center flex flex-col w-auto'>
        
         <h1 className="text-2xl self-center">Skills</h1>
         <div className="flex flex-row">

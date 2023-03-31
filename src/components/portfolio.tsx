@@ -25,7 +25,7 @@ const Portfolio = () => {
     },
   };
   return (
-  <div className="h-screen w-screen bg-white flex ml-20 mt-8">
+  <div className="h-screen w-auto bg-white flex ml-20 mt-8">
     {/* <div className="w-1/4 h-screen flex flex-col">
       <h1 className=' text-2xl flex-1 justify-center '>Web Projects</h1>
       <div className="flex flex-wrap text-5xl justify-center h-full  bg-gray-400	">
@@ -37,7 +37,7 @@ const Portfolio = () => {
     </div> */}
    
 
-    <div className="w-screen  h-screen container  flex mx-auto    p-4 border-4">
+    <div className="w-screen  h-screen container  self-center flex mx-auto  my-auto   border-4">
     
       
         {/* // data.map((item) =>( */}
@@ -54,10 +54,11 @@ const Portfolio = () => {
           modules={[ Pagination, Navigation]}
           className="mySwiper"
         >
-          <SwiperSlide> <img src={about} alt="picture" loading="lazy"/></SwiperSlide>
-          <SwiperSlide> <img src={face} alt="picture" loading="lazy"/></SwiperSlide>
-          <SwiperSlide> <img src={landing} alt="picture" loading="lazy"/></SwiperSlide>
-          <SwiperSlide> <img src={pos} alt="picture" loading="lazy"/></SwiperSlide>
+          <SwiperSlide> <img src={about} className="scale-75" alt="picture" loading="lazy"/><a className="text-sky-400 after:content-['_↗'] ..." href="https://www.
+apple.com/pro-display-xdr/" target="_blank">Link to</a></SwiperSlide>
+          <SwiperSlide> <img src={face} className="scale-75" alt="picture" loading="lazy"/></SwiperSlide>
+          <SwiperSlide> <img src={landing} className="scale-75" alt="picture" loading="lazy"/></SwiperSlide>
+          <SwiperSlide> <img src={pos} className="scale-75" alt="picture" loading="lazy"/></SwiperSlide>
          
         </Swiper>
           {/* // <div key={item.id} className={`snap-start  w-screen shrink-0 snap-always h-screen flex  justify-center items-end bg-center bg-contain bg-no-repeat bg-[url('./assets/${item.img}')]`}>
@@ -71,9 +72,7 @@ const Portfolio = () => {
         {/*  )) */}
       
 
-      <svg className="animate-bounce w-6 h-6 ...">
-
-      </svg>
+      
     </div>
     
    

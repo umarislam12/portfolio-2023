@@ -1,8 +1,8 @@
 const Contact = () => {
-    return (<div className="ml-28 flex flex-col">  
+    return (<div className="ml-24 flex flex-col h-screen w-auto mr-1">  
         <h1 className="text-2xl self-center">Have a project Idea?</h1>
         <h1 className="text-2xl self-center">Lets talk</h1>
-    <div className="flex w-screen h-screen ">
+    <div className="flex w-auto h-screen ">
         <div className="flex flex-col bg-gray-500 w-1/2 justify-center">
             <div className="self-center">Phone</div>
             <div className="self-center">Email</div>

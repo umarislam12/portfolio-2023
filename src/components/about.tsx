@@ -1,7 +1,7 @@
 import * as React from 'react';
 import pic from '../assets/pic.jpg'
 const About = () => {
-    return (<div className='ml-24'>
+    return (<div className='ml-24 flex flex-col w-auto mr-1'>
       
         <h1 className='justify-center flex text-4xl '>About me</h1>
         <div className='flex m-4 flex-wrap'>
